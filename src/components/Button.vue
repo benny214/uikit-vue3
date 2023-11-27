@@ -3,10 +3,14 @@
   'btn', 
   `btn--${color}`, 
   {'btn--rounded': rounded},
-  {'btn--outlined': outlined}
+  {'btn--outlined': outlined},
+  {'btn--icon': icon},
+  {'btn--large': size === 'large'}
   ]"
-  :disabled="disabled">
-    {{ label }}
+  :disabled="disabled"
+  @click="clickOnBtn">
+    <span v-if="icon"><font-awesome-icon :icon="`fa-regular fa-${icon}`"/></span>
+    <span v-else>{{ label }}</span> 
   </button>
 </template>
 <script setup>
@@ -30,8 +34,22 @@ const props = defineProps({
   outlined: {
     type: Boolean,
     required: false
+  },
+  icon: {
+    type: String,
+    required: false
+  },
+  size: {
+    type: String,
+    default: 'normal'
   }
 });
+
+const emit = defineEmits(['click'])
+
+const clickOnBtn = () => {
+  emit('click')
+}
 </script>
 <style lang="scss" scoped>
 @import "@/assets/styles/main";
@@ -45,7 +63,7 @@ const props = defineProps({
   border: none;
   cursor: pointer;
   font-size: 15px;
-  transition: 0.2s;
+  transition: .2s;
   &--primary {
     background-color: $primary;
     border: 1px solid $primary;
@@ -113,6 +131,18 @@ const props = defineProps({
     &:hover {
       color: #fff;
     }
+  }
+
+  &--icon {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &--large {
+    height: 48px;
+    padding: 0 30px;
   }
 }
 </style>

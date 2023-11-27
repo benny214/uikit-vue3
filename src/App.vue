@@ -26,6 +26,7 @@ const toggleMenu = () => {
 
 .content {
   max-width: 1400px;
+  margin-top: 62px;
   margin-left: 250px;
   padding: 30px;
   transition: .2s;
