@@ -48,7 +48,7 @@ const links = ref([
     font-weight: bold;
     margin-bottom: 10px;
     &:hover {
-      border-color: $primary-c-h;
+      border-color: $primary-h;
     }
   }
 }
