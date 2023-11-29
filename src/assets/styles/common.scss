@@ -16,3 +16,12 @@ a {
   text-decoration: none;
   color: $primary;
 }
+
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  &--block {
+    display: block;
+  }
+}

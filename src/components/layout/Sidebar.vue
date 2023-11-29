@@ -20,6 +20,7 @@ const props = defineProps({
 const links = ref([
   { name: "Typography", href: "/typography" },
   { name: "Button", href: "/button" },
+  { name: "Checkbox", href: "/checkbox" },
 ]);
 </script>
 <style lang="scss" scoped>
@@ -41,14 +42,11 @@ const links = ref([
   }
   &__link {
     display: block;
-    border-radius: 12px;
-    padding: 10px;
-    border: 2px solid #fff;
     transition: .2s;
     font-weight: bold;
     margin-bottom: 10px;
     &:hover {
-      border-color: $primary-h;
+      color: $primary-h;
     }
   }
 }
