@@ -11,7 +11,7 @@
   <label :for="id">{{ label }}</label>
 </template>
 <script setup>
-const emits = defineEmits(['update:checked'])
+const emits = defineEmits(['update:checked', 'updateCheckboxGroup'])
 const props = defineProps({
   name: {
     type: String,
@@ -37,10 +37,18 @@ const props = defineProps({
     type: Boolean,
     default: false
   },
+  group: {
+    type: Boolean,
+    default: false
+  }
 })
 
 const handleClick = (event) => {
-  emits('update:checked', event.target.checked)
+  if (props.group) {
+    emits('updateCheckboxGroup', {optionId: props.id, checked: event.target.checked})
+  }else {
+    emits('update:checked', event.target.checked)
+  }
 }
 </script>
 <style lang="scss" scoped>
