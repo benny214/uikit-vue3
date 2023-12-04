@@ -49,22 +49,21 @@
   <h2 class="heading-2">Size</h2>
   <div class="line">
     <Button label="Normal" color="primary" />
-    <Button label="Large" color="secondary" size="large"/>
+    <Button label="Large" color="secondary" size="large" />
   </div>
 
   <h2 class="heading-2">Event</h2>
   <div class="line">
-    <Button label="Normal" color="primary" @click="eventForBtn"/>
+    <Button label="Normal" color="primary" @click="eventForBtn" />
   </div>
 </template>
 <script setup>
 import Button from "@/components/Button.vue";
 
 const eventForBtn = () => {
-  alert('You clicked btn')
-}
+  alert("You clicked btn");
+};
 </script>
 <style lang="scss" scoped>
 @import "@/assets/styles/main";
-
 </style>

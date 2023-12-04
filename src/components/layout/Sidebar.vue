@@ -21,6 +21,7 @@ const links = ref([
   { name: "Typography", href: "/typography" },
   { name: "Button", href: "/button" },
   { name: "Checkbox", href: "/checkbox" },
+  { name: "Radiobutton", href: "/radiobutton" },
 ]);
 </script>
 <style lang="scss" scoped>
