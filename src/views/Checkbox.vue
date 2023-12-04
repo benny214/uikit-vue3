@@ -29,6 +29,19 @@
     <p>Selected Heroes: {{ selectedHeroes }}</p>
     <CheckboxGroup v-model:value="selectedHeroes" name="heroes" :options="listOfHeroes"/>
   </div>
+
+  <h2 class="heading-2">Switch</h2>
+  <div class="line--block">
+    <p>Switch: {{ switchTrust }}</p>
+    <Checkbox
+      label="Trust me?"
+      id="switch"
+      type="switch"
+      name="switch"
+      value="Trust me?"
+      v-model:checked="switchTrust"
+    />
+  </div>
 </template>
 <script setup>
 import { ref } from "vue";
@@ -47,5 +60,6 @@ const listOfHeroes = ref([
   {name: 'Groot', id: 'h5'},
 ])
 const selectedHeroes = ref([])
+const switchTrust = ref(false)
 </script>
 <style lang="scss" scoped></style>
