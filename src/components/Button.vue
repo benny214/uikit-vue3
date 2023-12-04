@@ -65,51 +65,51 @@ const clickOnBtn = () => {
   font-size: 15px;
   transition: .2s;
   &--primary {
-    background-color: $primary;
-    border: 1px solid $primary;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
     &:enabled:hover {
-      background-color: $primary-h;
-      border-color: $primary-h;
+      background-color: var(--primary-h);
+      border-color: var(--primary-h);
     }
   }
   &--secondary {
-    background-color: $secondary;
-    border: 1px solid $secondary;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
     &:enabled:hover {
-      background-color: $secondary-h;
-      border-color: $secondary-h;
+      background-color: var(--secondary-h);
+      border-color: var(--secondary-h);
     }
   }
   &--success {
-    background-color: $success;
-    border: 1px solid $success;
+    background-color: var(--success);
+    border: 1px solid var(--success);
     &:enabled:hover {
-      background-color: $success-h;
-      border-color: $success-h;
+      background-color: var(--success-h);
+      border-color: var(--success-h);
     }
   }
   &--info {
-    background-color: $info;
-    border: 1px solid $info;
+    background-color: var(--info);
+    border: 1px solid var(--info);
     &:enabled:hover {
-      background-color: $info-h;
-      border-color: $info-h;
+      background-color: var(--info-h);
+      border-color: var(--info-h);
     }
   }
   &--warning {
-    background-color: $warning;
-    border: 1px solid $warning;
+    background-color: var(--warning);
+    border: 1px solid var(--warning);
     &:enabled:hover {
-      background-color: $warning-h;
-      border-color: $warning-h;
+      background-color: var(--warning-h);
+      border-color: var(--warning-h);
     }
   }
   &--danger {
-    background-color: $danger;
-    border: 1px solid $danger;
+    background-color: var(--danger);
+    border: 1px solid var(--danger);
     &:enabled:hover {
-      background-color: $danger-h;
-      border-color: $danger-h;
+      background-color: var(--danger-h);
+      border-color: var(--danger-h);
     }
   }
 

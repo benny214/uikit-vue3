@@ -22,6 +22,7 @@ const links = ref([
   { name: "Button", href: "/button" },
   { name: "Checkbox", href: "/checkbox" },
   { name: "Radiobutton", href: "/radiobutton" },
+  { name: "Progress", href: "/progress" },
 ]);
 </script>
 <style lang="scss" scoped>
@@ -47,7 +48,7 @@ const links = ref([
     font-weight: bold;
     margin-bottom: 10px;
     &:hover {
-      color: $primary-h;
+      color: var(--primary-h);
     }
   }
 }

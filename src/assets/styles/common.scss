@@ -9,12 +9,12 @@ body {
   padding: 0;
   font-family: 'Inter', Arial, sans-serif;
   font-size: 16px;
-  background-color: $body-bg;
+  background-color: var(--body-bg);
 }
 
 a {
   text-decoration: none;
-  color: $primary;
+  color: var(--primary);
 }
 
 .line {
