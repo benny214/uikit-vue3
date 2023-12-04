@@ -7,7 +7,7 @@
         cy="60"
         r="54"
         fill="none"
-        :stroke="`var(--${color}-hover)`"
+        :stroke="`var(--${color}-h)`"
         stroke-width="12" />
       <circle
         class="progress__circle-line"
