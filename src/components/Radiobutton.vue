@@ -12,7 +12,7 @@
   <label :for="id">{{ label }}</label>
 </template>
 <script setup>
-const emits = defineEmits(["update:checked"]);
+const emits = defineEmits(["update:checkedValue"]);
 const props = defineProps({
   name: {
     type: String,
@@ -45,7 +45,7 @@ const props = defineProps({
 });
 
 const handleClick = (event) => {
-  emits("update:checked", event.target.checked);
+  emits("update:checkedValue", event.target.value);
 };
 </script>
 <style lang="scss" scoped>
