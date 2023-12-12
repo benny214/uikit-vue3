@@ -23,7 +23,6 @@ const props = defineProps({
 })
 </script>
 <style lang="scss" scoped>
-@import "@/assets/styles/main";
 .progress {
   height: 10px;
   border-radius: 4px;

@@ -23,10 +23,11 @@ const links = ref([
   { name: "Checkbox", href: "/checkbox" },
   { name: "Radiobutton", href: "/radiobutton" },
   { name: "Progress", href: "/progress" },
+  { name: "Input", href: "/input" },
 ]);
 </script>
 <style lang="scss" scoped>
-@import '@/assets/styles/main';
+
 
 .sidebar {
   left: 0;

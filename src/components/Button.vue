@@ -52,7 +52,6 @@ const clickOnBtn = () => {
 }
 </script>
 <style lang="scss" scoped>
-@import "@/assets/styles/main";
 .btn {
   margin-right: 10px;
   margin-bottom: 10px;

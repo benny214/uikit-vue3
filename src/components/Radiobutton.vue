@@ -49,8 +49,6 @@ const handleClick = (event) => {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/styles/main";
-
 .radiobutton {
   position: absolute;
   z-index: -1;

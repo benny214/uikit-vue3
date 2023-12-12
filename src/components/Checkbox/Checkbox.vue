@@ -66,7 +66,6 @@ const handleClick = (event) => {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/styles/main";
 .checkbox {
   position: absolute;
   z-index: -1;

@@ -43,5 +43,4 @@ const disabledRadio = ref(true);
 const disabledRadioChecked = ref(true);
 </script>
 <style lang="scss" scoped>
-@import "@/assets/styles/main";
 </style>
